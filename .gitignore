@@ -8,3 +8,14 @@ Gemfile
 Gemfile.lock
 node_modules
 package.json
+
+# Directory-based project format:
+.idea/
+/classes
+*.ipr
+*.iws
+*.iml
+out/
+.idea_modules/
+atlassian-ide-plugin.xml
+.name
