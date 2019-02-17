@@ -1,16 +1,14 @@
-###Vagrant 
-
 **Vagrant** - инструмент для конфигурирования и управления виртуальными машинами с открытым исходным кодом. 
 
 #### Установка vagrant
 
 Vagrant требует установки VirtualBox. Скачать можно [отсюда] (https://www.virtualbox.org)
 или установить с помощью менеджера пакетов   
-```
+```bash
 $ brew cask install virtualbox
 ```
 А затем и сам [vagrant] (https://www.vagrantup.com/)
-```
+```bash
 $ brew cask install vagrant
 ```
 Проверка, что vagrant установился и работает
@@ -45,7 +43,7 @@ end
 #### Подключение по ssh
 После запуска можно попробовать подключиться по ssh с помощью команды `vagrant ssh`. 
 Узнать детали ssh подключения можно с помощью `vagrant ssh-config`
-```
+```bash
 $ vagrant ssh-config
 Host default
   HostName 127.0.0.1
@@ -59,7 +57,7 @@ Host default
   LogLevel FATAL
 ```
 Также можно подключиться, используя утилиту ssh и приватный ключ, хранящийся в файле
-```
+```bash
 $ ssh vagrant@127.0.0.1 -p 2222 -i /Users/gernik/develop/ansible/playbooks/.vagrant/machines/default/virtualbox/private_key
 ```
 Дальше можно действовать по старинке. Поставить все необходимые пакеты и зависимости, а затем запустить проект. 
